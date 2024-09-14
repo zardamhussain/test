@@ -9,7 +9,7 @@ name = "deepikapy"
 dynamic = ["version"]
 description = "This package is dedicated to deepika"
 authors = ["zardamhussain <zardamhussain@gmail.com>"]
-license = "self"
+license = { text = "self" }
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
