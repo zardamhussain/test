@@ -1,19 +1,28 @@
-[tool.poetry]
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+
+
+[project]
 name = "deepikapy"
-version = "0.1.0"
+dynamic = ["version"]
 description = "This package is dedicated to deepika"
 authors = ["zardamhussain <zardamhussain@gmail.com>"]
 license = "self"
 readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+]
 
-[tool.poetry.dependencies]
-python = "^3.8"
 
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[project.urls]
+Source = "https://github.com/zardamhussain/test"
 
+
+[project.optional-dependencies]
+#All optional deps
 
 [tool.setuptools.packages.find]
 # All the following settings are optional:
